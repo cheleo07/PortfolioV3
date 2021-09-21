@@ -4,17 +4,19 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
+import Parcours from "./components/Parcours";
 import 'tailwindcss/tailwind.css';
+import Experiences from "./components/Experiences";
 
 export default function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
       <Navbar />
       <About />
+      <Parcours />
+      <Experiences />
       <Projects />
       <Skills />
-      <Testimonials />
       <Contact />
     </main>
   );

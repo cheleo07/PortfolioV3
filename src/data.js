@@ -33,26 +33,67 @@ export const projects = [
     },
 ];
 export const skills = [
-    "react",
-    "javascript",
-    "html",
-    "css",
+    "Html",
+    "Css",
+    "Javascript",
+    "VueJs",
+    "NodeJS",
+    "ReactJs",
+    "Java",
+    "Php",
+    "Python",
+    "Base de donnée SQL",
+    "Notion DevOps Agilité",
+    "Photoshop",
 ];
-export const testimonials = [
+export const experiences = [
     {
-        title: "wow",
-        subtitle: "MERN Stack",
+        title: "Alternance / Axone-io",
+        subtitle: "Mérignac (Bordeaux), Septembre 2020 - Septembre 2021",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./logo.svg",
+        image: "./image2vector.svg",
         link: "https://reactbootcamp.com",
     },
     {
-        title: "pilou",
-        subtitle: "MERN Stack",
+        title: "Stage / Axone-io",
+        subtitle: "Mérignac (Bordeaux), Janvier - Mars 2020",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-        image: "./project-1.gif",
+        image: "./Axone-io.png",
         link: "https://reactbootcamp.com",
+    },
+    {
+        title: "Stage / Euro Disney",
+        subtitle: "Chessy (Île-de-France), Mai - Aout 2019",
+        description:
+            "Participation au développement de l’application mobile de Disneyland Paris",
+        tasks: {
+            a: "1",
+            b: "2",
+            c: "3",
+        },
+        image: "./disney-1.svg",
+        link: "https://reactbootcamp.com",
+    },
+];
+export const parcours = [
+    {
+        title: "2019",
+        cardTitle: "Bac S spécialisation ISN",
+        cardSubtitle:"Lycée Fesch, Ajaccio",
+        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+    },
+    {
+        title: "2020",
+        cardTitle: "Bts Sio option Slam",
+        cardSubtitle:"Lycée Gustave Eiffel, Bordeaux",
+        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+    },
+    {
+        title: "2021",
+        cardTitle: "License Pro Dawin en alternance",
+        cardSubtitle:"IUT de Gradignan, Bordeaux",
+        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
     },
 ];
