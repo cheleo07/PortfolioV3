@@ -1,37 +1,39 @@
+import React from "react";
+import { TerminalIcon, UsersIcon } from "@heroicons/react/solid";
+import { testimonials } from "../data";
+
 export default function Testimonials() {
     return (
-        <section id="about">
-            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                        Hi, I'm Reed.
-                        <br className="hidden lg:inline-block" />I love to build amazing
-                        apps.
-                    </h1>
-                    <p className="mb-8 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                        laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                        Laborum, voluptas natus?
-                    </p>
-                    <div className="flex justify-center">
-                        <a
-                            href="#contact"
-                            className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-                            Work With Me
-                        </a>
-                        <a
-                            href="#projects"
-                            className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                            See My Past Work
-                        </a>
-                    </div>
-                </div>
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                    <img
-                        className="object-cover object-center rounded"
-                        alt="hero"
-                        src="./coding.svg"
-                    />
+        <section id="testimonials">
+            <div className="container px-5 py-10 mx-auto text-center">
+                <UsersIcon className="w-10 inline-block mb-4" />
+                <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
+                    Client Testimonials
+                </h1>
+                <div className="flex flex-wrap m-4">
+                    {testimonials.map((testimonial) => (
+                        <div className="p-4 md:w-1/2 w-full">
+                            <div className="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+                                <TerminalIcon className="block w-8 text-gray-500 mb-4" />
+                                <p className="leading-relaxed mb-6">{testimonial.quote}</p>
+                                <div className="inline-flex items-center">
+                                    <img
+                                        alt="testimonial"
+                                        src={testimonial.image}
+                                        className="w-12 rounded-full flex-shrink-0 object-cover object-center"
+                                    />
+                                    <span className="flex-grow flex flex-col pl-4">
+                    <span className="title-font font-medium text-white">
+                      {testimonial.name}
+                    </span>
+                    <span className="text-gray-500 text-sm uppercase">
+                      {testimonial.company}
+                    </span>
+                  </span>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
