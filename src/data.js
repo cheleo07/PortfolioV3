@@ -78,22 +78,5 @@ export const experiences = [
     },
 ];
 export const parcours = [
-    {
-        title: "2019",
-        cardTitle: "Bac S spécialisation ISN",
-        cardSubtitle:"Lycée Fesch, Ajaccio",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-    },
-    {
-        title: "2020",
-        cardTitle: "Bts Sio option Slam",
-        cardSubtitle:"Lycée Gustave Eiffel, Bordeaux",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-    },
-    {
-        title: "2021",
-        cardTitle: "License Pro Dawin en alternance",
-        cardSubtitle:"IUT de Gradignan, Bordeaux",
-        cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
-    },
+
 ];
