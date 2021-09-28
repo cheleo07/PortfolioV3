@@ -8,6 +8,7 @@ import Parcours from "./components/Parcours";
 import 'tailwindcss/tailwind.css';
 import Experiences from "./components/Experiences";
 
+
 export default function App() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font">
